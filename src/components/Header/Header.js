@@ -2,16 +2,11 @@ import React, { useState, useEffect, useContext } from 'react';
 import './Header.css';
 import { withRouter, Link } from 'react-router-dom';
 import Search from 'antd/lib/input/Search';
-import { Row, Col, Button } from 'antd';
-import {
-  ShoppingCartOutlined,
-  LogoutOutlined,
-  UserOutlined,
-} from '@ant-design/icons';
+import { Row, Col } from 'antd';
+import { LogoutOutlined } from '@ant-design/icons';
 import jwtDecode from 'jwt-decode';
 import localStorageService from '../../service/localStorageService';
 import { SearchContext } from '../../contexts/SearchContext';
-import Avatar from 'antd/lib/avatar/avatar';
 
 function Header(props) {
   const [name, setName] = useState('');
@@ -72,9 +67,8 @@ function Header(props) {
               <i
                 style={{ color: 'white', fontSize: '20px' }}
                 className='now-ui-icons users_circle-08'
-              >
-                <div style={{ color: 'white' }}>{name}</div>
-              </i>
+              ></i>{' '}
+              <div style={{ color: 'white' }}>{name}</div>
             </Col>
           </Row>
         </Link>
@@ -102,7 +96,7 @@ function Header(props) {
             }}
             className='now-ui-icons media-1_button-power'
           ></i>
-        </Link>
+        </Link>{' '}
       </Col>
     </Row>
   );

@@ -3,7 +3,7 @@ import React from 'react';
 import { notification } from 'antd';
 import axios from '../../config/axios';
 import localStorageService from '../../service/localStorageService';
-import { withRouter, Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 import {
   Button,
