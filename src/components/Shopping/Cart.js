@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from '../../config/axios';
 import { Button, Avatar, List, Row, Col, Card } from 'antd';
-import Header from '../Header/Header';
+import ShoppingNavbar from '../Navbars/ShoppingNavbar';
 import { Link } from 'react-router-dom';
 
 let id = 1;
@@ -52,9 +52,9 @@ function Cart(props) {
 
   return (
     <div>
-      <Header />
+      <ShoppingNavbar />
 
-      <Row justify='center'>
+      <Row style={{ marginTop: '110px' }} justify='center'>
         <Col offset={1} xs={13}>
           <List
             itemLayout='horizontal'

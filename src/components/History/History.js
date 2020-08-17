@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from '../../config/axios';
-import Header from '../Header/Header';
+import ShoppingNavbar from '../Navbars/ShoppingNavbar';
 import { List, Avatar, Descriptions, Col } from 'antd';
 
 let options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -29,8 +29,8 @@ function History(props) {
   console.log(history);
   return (
     <div>
-      <Header />
-      <Col xs={18} offset={3}>
+      <ShoppingNavbar />
+      <Col xs={18} offset={3} style={{ marginTop: '120px' }}>
         <List
           itemLayout='horizontal'
           header='PRODUCT'

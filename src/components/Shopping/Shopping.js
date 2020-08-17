@@ -4,7 +4,7 @@ import './Shopping.css';
 import { notification } from 'antd';
 import Product from './Product';
 import axios from '../../config/axios';
-
+import ShoppingNavbar from '../Navbars/ShoppingNavbar';
 import { SearchContext } from '../../contexts/SearchContext';
 import Slider from 'nouislider';
 import {
@@ -114,7 +114,8 @@ function Home(props) {
   return (
     <div>
       <>
-        <ScrollTransparentNavbar />
+        <ShoppingNavbar></ShoppingNavbar>
+        {/* <ScrollTransparentNavbar /> */}
         <div className='wrapper'>
           <EcommerceHeader />
           <div className='main'>

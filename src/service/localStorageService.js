@@ -1,26 +1,26 @@
 const setToken = (token) => {
-    localStorage.setItem('ACCESS_TOKEN', token)
-}
+  localStorage.setItem('ACCESS_TOKEN', token);
+};
 
 const getToken = () => {
-    return localStorage.getItem('ACCESS_TOKEN')
-}
+  return localStorage.getItem('ACCESS_TOKEN');
+};
 
 const removeToken = () => {
-    localStorage.removeItem('ACCESS_TOKEN')
-}
+  localStorage.removeItem('ACCESS_TOKEN');
+};
 
 const getRole = () => {
-    if (getToken()) {
-        return 'user'
-    } else {
-        return 'guest'
-    }
-}
+  if (getToken()) {
+    return 'user';
+  } else {
+    return 'guest';
+  }
+};
 
 export default {
-    setToken,
-    getToken,
-    removeToken,
-    getRole
-}
+  setToken,
+  getToken,
+  removeToken,
+  getRole,
+};
