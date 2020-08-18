@@ -28,7 +28,7 @@ import {
   UncontrolledTooltip,
 } from 'reactstrap';
 // core components
-import ScrollTransparentNavbar from '../Header/Header';
+
 import EcommerceHeader from 'components/Headers/EcommerceHeader.js';
 import Footer from 'components/Footers/Footer.js';
 

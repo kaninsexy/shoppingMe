@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { withRouter, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Search from 'antd/lib/input/Search';
 import { Row, Col } from 'antd';
-import { LogoutOutlined } from '@ant-design/icons';
 import jwtDecode from 'jwt-decode';
 import localStorageService from '../../service/localStorageService';
 import { SearchContext } from '../../contexts/SearchContext';
@@ -17,7 +16,6 @@ import {
   Navbar,
   NavItem,
   Nav,
-  Container,
   UncontrolledTooltip,
   NavLink,
 } from 'reactstrap';
