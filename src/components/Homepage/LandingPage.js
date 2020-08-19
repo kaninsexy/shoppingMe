@@ -22,7 +22,7 @@ import LandingPageHeader from 'components/Headers/LandingPageHeader.js';
 import FooterDefault from 'components/Footers/FooterDefault.js';
 
 function LandingPage() {
-  const [pills, setPills] = React.useState('1');
+  // const [pills, setPills] = React.useState('1');
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [emailFocus, setEmailFocus] = React.useState(false);
   React.useEffect(() => {

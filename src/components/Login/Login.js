@@ -98,7 +98,7 @@ function Login(props) {
                             </InputGroupText>
                           </InputGroupAddon>
                           <Input
-                            style={{ width: '280px' }}
+                            style={{ width: '270px' }}
                             placeholder='Username'
                             name='username'
                             type='email'
@@ -120,7 +120,7 @@ function Login(props) {
                             </InputGroupText>
                           </InputGroupAddon>
                           <Input
-                            style={{ width: '280px' }}
+                            style={{ width: '270px' }}
                             placeholder='Password'
                             type='password'
                             name='password  '
@@ -143,23 +143,14 @@ function Login(props) {
                   <CardFooter className='text-center'></CardFooter>
                   <div className='pull-left'>
                     <h6>
-                      <a
-                        className='link footer-link'
-                        onClick={(e) => e.preventDefault()}
-                        href='/register'
-                      >
+                      <a className='link footer-link' href='/register'>
                         Create Account
                       </a>
                     </h6>
                   </div>
                   <div className='pull-right'>
                     <h6>
-                      <a
-                        className='link footer-link'
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        Need Help?
-                      </a>
+                      <a className='link footer-link'>Need Help?</a>
                     </h6>{' '}
                   </div>
                 </Card>

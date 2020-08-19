@@ -30,26 +30,23 @@ const layout = {
 };
 
 function Register(props) {
-  const onFinish = (event) => {
-    const body = {
-      username: event.target[0].value,
-      password: event.target[1].value,
-      name: event.target[2].value,
-      address: event.target[3].value,
-    };
-    axios
-      .post('user/register', body)
-      .then((res) => {
-        notification.success({
-          message: 'Register Success',
-        });
-        props.history.push('/login');
-      })
-      .catch((err) => {
-        notification.error({
-          message: 'Register false',
-        });
+  const onFinish = async (event) => {
+    try {
+      event.preventDefault();
+      const body = {
+        username: event.target[0].value,
+        password: event.target[1].value,
+        name: event.target[2].value,
+        address: event.target[3].value,
+      };
+      const res = await axios.post('user/register', body);
+      console.log(res.data);
+    } catch (error) {
+      notification.error({
+        message: 'Register false',
       });
+    }
+    props.history.push('/login');
   };
 
   const [firstFocus, setFirstFocus] = React.useState(false);

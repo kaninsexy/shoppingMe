@@ -114,13 +114,13 @@ function DropdownScrollNavbar() {
                   <p>Register/Login</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby='navbarDropdownMenuLink1' right>
-                  <DropdownItem to='/login' tag={Link}>
-                    <i className='now-ui-icons ui-1_lock-circle-open'></i>
-                    Login
-                  </DropdownItem>
                   <DropdownItem to='/register' tag={Link}>
                     <i className='now-ui-icons objects_key-25'></i>
                     Register
+                  </DropdownItem>
+                  <DropdownItem to='/login' tag={Link}>
+                    <i className='now-ui-icons ui-1_lock-circle-open'></i>
+                    Login
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
